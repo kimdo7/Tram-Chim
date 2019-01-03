@@ -3,10 +3,10 @@ import * as $ from 'jquery';
 
 @Component({
     selector: 'app-company',
-    templateUrl: './company.component.html',
-    styleUrls: ['./company.component.css']
+    templateUrl: './about-us.component.html',
+    styleUrls: ['./about-us.component.css']
 })
-export class CompanyComponent implements OnInit {
+export class AboutUsComponent implements OnInit {
 
     constructor() { }
 

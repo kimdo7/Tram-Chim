@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SolutionsComponent } from './components/solutions/solutions.component';
-import { CompanyComponent } from './components/company/company.component';
-import { ClientsComponent } from './components/clients/clients.component';
-import { LoginComponent } from './components/login/login.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ServicesComponent } from './components/services/services.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PartnersComponent } from './components/partners/partners.component';
 
 const routes: Routes = [
     {path: "", component: HomeComponent},
-    {path: 'solutions', component: SolutionsComponent},
-    {path: 'company', component: CompanyComponent},
-    {path: 'clients', component: ClientsComponent},
+    {path: 'services', component: ServicesComponent},
+    {path: 'about-us', component: AboutUsComponent},
+    {path: 'partners', component: PartnersComponent},
     {path: 'careers', component: CareersComponent},
-    {path: 'login', component: LoginComponent},
     {path: 'contact-us', component: ContactComponent},
 ];
 

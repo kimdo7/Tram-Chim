@@ -18,6 +18,6 @@ export class HomeComponent implements OnInit {
     }
 
     onToSolution(){
-        this._router.navigate(["/solutions"])
+        this._router.navigate(["/services"])
     }
 }

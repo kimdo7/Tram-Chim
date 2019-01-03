@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 @Component({
     selector: 'app-solutions',
-    templateUrl: './solutions.component.html',
-    styleUrls: ['./solutions.component.css']
+    templateUrl: './services.component.html',
+    styleUrls: ['./services.component.css']
 })
-export class SolutionsComponent implements OnInit {
+export class ServicesComponent implements OnInit {
 
     constructor() { }
 

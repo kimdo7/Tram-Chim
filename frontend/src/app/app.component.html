@@ -10,30 +10,30 @@
         </div>
         <div class="text-right">
             <ul class="navbar-nav">
-                <li *ngIf="title != '/solutions'" class="nav-item ">
-                    <button (click)="onNavigate('/solutions')" class="btn btn-dark nav-link">SOLUTIONS</button>
+                <li *ngIf="title != '/services'" class="nav-item ">
+                    <button (click)="onNavigate('/services')" class="btn btn-dark nav-link">SERVICES</button>
                 </li>
-                <li *ngIf="title == '/solutions'" class="nav-item active">
-                    <button class="btn btn-dark nav-link">SOLUTIONS</button>
+                <li *ngIf="title == '/services'" class="nav-item active">
+                    <button class="btn btn-dark nav-link">SERVICES</button>
                 </li>
-                <!-- SOLUTIONS -->
+                <!-- SERVICES -->
 
 
-                <li *ngIf="title != '/company'" class="nav-item ">
-                    <button (click)="onNavigate('/company')" class="btn btn-dark nav-link" href="#">COMPANY</button>
+                <li *ngIf="title != '/about-us'" class="nav-item ">
+                    <button (click)="onNavigate('/about-us')" class="btn btn-dark nav-link" href="#">ABOUT US</button>
                 </li>
-                <li *ngIf="title == '/company'" class="nav-item active">
-                    <button  class="btn btn-dark nav-link" href="#">COMPANY</button>
+                <li *ngIf="title == '/about-us'" class="nav-item active">
+                    <button  class="btn btn-dark nav-link" href="#">ABOUT US</button>
                 </li>
                 <!-- company -->
 
 
 
-                <li *ngIf="title != '/clients'" class="nav-item ">
-                    <button (click)="onNavigate('/clients')" class="btn btn-dark nav-link" href="#">CLIENTS</button>
+                <li *ngIf="title != '/partners'" class="nav-item ">
+                    <button (click)="onNavigate('/partners')" class="btn btn-dark nav-link" href="#">PARTNERS</button>
                 </li>
-                <li *ngIf="title == '/clients'" class="nav-item active">
-                    <button [routerLink]="['/clients']" class="btn btn-dark nav-link" href="#">CLIENTS</button>
+                <li *ngIf="title == '/partners'" class="nav-item active">
+                    <button  class="btn btn-dark nav-link" href="#">PARTNERS</button>
                 </li>
                 <!-- clients -->
 
@@ -45,16 +45,12 @@
                 </li>
                 <!-- careers -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CLIENT LOGIN</a>
-                </li>
-
 
                 <li *ngIf="title != '/contact-us'" class="nav-item ">
-                    <button (click)="onNavigate('/contact-us')" class="btn btn-dark nav-link" href="#">CONTACT</button>
+                    <button (click)="onNavigate('/contact-us')" class="btn btn-dark nav-link" href="#">CONTACT US</button>
                 </li>
                 <li *ngIf="title == '/contact-us'" class="nav-item active">
-                    <button  class="btn btn-dark nav-link" href="#">CONTACT</button>
+                    <button  class="btn btn-dark nav-link" href="#">CONTACT US</button>
                 </li>
 
                 <!-- contact -->
@@ -65,10 +61,10 @@
 
 <router-outlet></router-outlet>
 
-<div class="bg-success w-100 jumbotron mb-0 rounded-0">
+<div *ngIf="title != '/contact-us'" class="bg-success w-100 jumbotron mb-0 rounded-0">
     <div class="container">
         <div class="row text-white">
-            <h2 class="col-9">See why everyone says "Bravo"</h2>
+            <h2 class="col-9">See why everyone says "Cloud Bros"</h2>
             <!-- <button class="col-3">REQUEST A QUOTE</button> -->
             <button mat-stroked-button (click)="onNavigate('/contact-us')" class="col-3 text-success bg-white">REQUEST A
                 QUOTE</button>
@@ -77,5 +73,5 @@
     </div>
 </div>
 <div class="jumbotron bg-dark mb-0 rounded-0">
-    <small class="text-white">@ 2018 BRAVO Consulting Services, LLC.</small>
+    <small class="text-white">@ 2018 Cloud Bros Consulting Services, LLC.</small>
 </div>
