@@ -8,7 +8,9 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-    constructor(private _router: Router) { }
+    constructor(
+        private _router: Router
+        ) { }
 
     ngOnInit() {
         $(document).ready(function(){
