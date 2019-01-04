@@ -2,24 +2,22 @@
     height: 500px;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 340px) { 
     .nav-button{
         font-size: 300%;
     }
-
-    
-
+ }
+@media (min-width: 540px) { 
+    .nav-button{
+        font-size: 300%;
+    }
  }
 
-@media (min-width: 768px) { 
+ @media (min-width: 720px) { 
 
     .nav-button{
         font-size: 300%;
     }
-
-    /* .navbar-collapse{
-        background-color: #11ffee00
-    } */
  }
 
 @media (min-width: 992px) { 
