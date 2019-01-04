@@ -1,3 +1,36 @@
 .footer{
     height: 500px;
 }
+
+@media (min-width: 576px) { 
+    .nav-button{
+        font-size: 300%;
+    }
+
+    
+
+ }
+
+@media (min-width: 768px) { 
+
+    .nav-button{
+        font-size: 300%;
+    }
+
+    /* .navbar-collapse{
+        background-color: #11ffee00
+    } */
+ }
+
+@media (min-width: 992px) { 
+    .nav-button{
+        font-size: 100%;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .nav-button{
+        font-size: 100%;
+    }
+ }
+

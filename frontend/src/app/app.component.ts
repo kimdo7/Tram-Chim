@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
     selector: 'app-root',
@@ -14,8 +15,9 @@ export class AppComponent implements OnInit {
     ngOnInit() {
     }
 
-    onNavigate(text){
+    onNavigate(text) {
         this.title = text
         this._router.navigate([text])
+        $('#hamburger').trigger('click');
     }
 }
