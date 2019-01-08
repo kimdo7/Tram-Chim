@@ -15,9 +15,13 @@ export class AppComponent implements OnInit {
     ngOnInit() {
     }
 
-    onNavigate(text) {
+    onNavigate(text, flag) {
         this.title = text
         this._router.navigate([text])
-        $('#hamburger').trigger('click');
+        console.log(window.innerWidth)
+
+        if (flag && window.innerWidth <= 900) {
+            $('#hamburger').trigger('click');
+        }
     }
 }

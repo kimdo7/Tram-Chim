@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-    <button class="navbar-brand btn btn-dark" (click)="onNavigate('/')">Cloud Bros</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navBarHeight" id="temp">
+    <button class="navbar-brand btn btn-dark" (click)="onNavigate('/', false)">Cloud Bros</button>
     <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
         <div class="text-right">
             <ul class="navbar-nav">
                 <li *ngIf="title != '/services'" class="nav-item ">
-                    <button (click)="onNavigate('/services')" class="btn btn-dark nav-link float-right nav-button">SERVICES</button>
+                    <button (click)="onNavigate('/services', true)" class="btn btn-dark nav-link float-right nav-button">SERVICES</button>
                 </li>
                 <li *ngIf="title == '/services'" class="nav-item active ">
                     <button class="btn btn-dark nav-link float-right nav-button">SERVICES</button>
@@ -20,7 +20,7 @@
 
 
                 <li *ngIf="title != '/about-us'" class="nav-item ">
-                    <button (click)="onNavigate('/about-us')" class="btn btn-dark nav-link float-right nav-button">ABOUT US</button>
+                    <button (click)="onNavigate('/about-us', true)" class="btn btn-dark nav-link float-right nav-button">ABOUT US</button>
                 </li>
                 <li *ngIf="title == '/about-us'" class="nav-item active">
                     <button class="btn btn-dark nav-link float-right nav-button">ABOUT US</button>
@@ -30,7 +30,7 @@
 
 
                 <li *ngIf="title != '/partners'" class="nav-item ">
-                    <button (click)="onNavigate('/partners')" class="btn btn-dark nav-link float-right nav-button">PARTNERS</button>
+                    <button (click)="onNavigate('/partners', true)" class="btn btn-dark nav-link float-right nav-button">PARTNERS</button>
                 </li>
                 <li *ngIf="title == '/partners'" class="nav-item active">
                     <button class="btn btn-dark nav-link float-right nav-button">PARTNERS</button>
@@ -38,7 +38,7 @@
                 <!-- clients -->
 
                 <li *ngIf="title != '/careers'" class="nav-item ">
-                    <button (click)="onNavigate('/careers')" class="btn btn-dark nav-link float-right nav-button">CAREERS</button>
+                    <button (click)="onNavigate('/careers', true)" class="btn btn-dark nav-link float-right nav-button">CAREERS</button>
                 </li>
                 <li *ngIf="title == '/careers'" class="nav-item active">
                     <button [routerLink]="['/careers']" class="btn btn-dark nav-link float-right nav-button">CAREERS</button>
@@ -47,7 +47,7 @@
 
 
                 <li *ngIf="title != '/contact-us'" class="nav-item ">
-                    <button (click)="onNavigate('/contact-us')" class="btn btn-dark nav-link float-right nav-button">CONTACT US</button>
+                    <button (click)="onNavigate('/contact-us', true)" class="btn btn-dark nav-link float-right nav-button">CONTACT US</button>
                 </li>
                 <li *ngIf="title == '/contact-us'" class="nav-item active">
                     <button class="btn btn-dark nav-link float-right nav-button">CONTACT US</button>
@@ -59,15 +59,17 @@
     </div>
 </nav>
 
-<router-outlet></router-outlet>
-
+<!-- <router-outlet ></router-outlet> -->
+<div style="margin-top:50px !important;">
+    <router-outlet></router-outlet>
+</div>
 
 <div *ngIf="title != '/contact-us'" class="bg-primary w-100 jumbotron mb-0 rounded-0">
     <div class="container">
         <div class="row text-white">
             <h2 class="col-md-9">See why everyone says "Cloud Bros"</h2>
             <!-- <button class="col-3">REQUEST A QUOTE</button> -->
-            <button mat-stroked-button (click)="onNavigate('/contact-us')" class="col-md-3 text-primary bg-white">REQUEST
+            <button mat-stroked-button (click)="onNavigate('/contact-us', false)" class="col-md-3 text-primary bg-white">REQUEST
                 A
                 QUOTE</button>
         </div>
