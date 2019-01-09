@@ -23,13 +23,29 @@
 
 @media (min-width: 992px) { 
     .nav-button{
-        font-size: 100%;
+        font-size: 150%;
     }
  }
 
 @media (min-width: 1200px) { 
     .nav-button{
-        font-size: 100%;
+        font-size: 150%;
     }
  }
 
+.fixed-top {
+    min-height: 100px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 100px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}

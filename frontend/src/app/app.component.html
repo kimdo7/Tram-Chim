@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navBarHeight" id="temp">
+<nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top navBarHeight" id="temp">
     <!-- <button class="navbar-brand btn btn-dark" (click)="onNavigate('/', false)">Cloud Bros</button> -->
 
-    <button class="navbar-brand btn btn-dark" (click)="onNavigate('/', false)">
-        <img src="assets/img/logo/cloudBros.png" width="120" height="30" class="d-inline-block align-top" alt="">
+    <button class="navbar-brand btn" (click)="onNavigate('/', false)">
+        <img src="assets/img/logo/cloudBros.png" width="120" height="50" class="d-inline-block align-top" alt="">
         
       </button>
 
@@ -18,46 +18,46 @@
         <div class="text-right">
             <ul class="navbar-nav">
                 <li *ngIf="title != '/services'" class="nav-item ">
-                    <button (click)="onNavigate('/services', true)" class="btn btn-dark nav-link float-right nav-button">SERVICES</button>
+                    <button (click)="onNavigate('/services', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">SERVICES</button>
                 </li>
                 <li *ngIf="title == '/services'" class="nav-item active ">
-                    <button class="btn btn-dark nav-link float-right nav-button">SERVICES</button>
+                    <button class="btn  btn-outline-primary  border-0 nav-link float-right nav-button text-white">SERVICES</button>
                 </li>
                 <!-- SERVICES -->
 
 
                 <li *ngIf="title != '/about-us'" class="nav-item ">
-                    <button (click)="onNavigate('/about-us', true)" class="btn btn-dark nav-link float-right nav-button">ABOUT US</button>
+                    <button (click)="onNavigate('/about-us', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button  text-white">ABOUT US</button>
                 </li>
                 <li *ngIf="title == '/about-us'" class="nav-item active">
-                    <button class="btn btn-dark nav-link float-right nav-button">ABOUT US</button>
+                    <button class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">ABOUT US</button>
                 </li>
                 <!-- company -->
 
 
 
                 <li *ngIf="title != '/partners'" class="nav-item ">
-                    <button (click)="onNavigate('/partners', true)" class="btn btn-dark nav-link float-right nav-button">PARTNERS</button>
+                    <button (click)="onNavigate('/partners', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">PARTNERS</button>
                 </li>
                 <li *ngIf="title == '/partners'" class="nav-item active">
-                    <button class="btn btn-dark nav-link float-right nav-button">PARTNERS</button>
+                    <button class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">PARTNERS</button>
                 </li>
                 <!-- clients -->
 
                 <li *ngIf="title != '/careers'" class="nav-item ">
-                    <button (click)="onNavigate('/careers', true)" class="btn btn-dark nav-link float-right nav-button">CAREERS</button>
+                    <button (click)="onNavigate('/careers', true)" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CAREERS</button>
                 </li>
                 <li *ngIf="title == '/careers'" class="nav-item active">
-                    <button [routerLink]="['/careers']" class="btn btn-dark nav-link float-right nav-button">CAREERS</button>
+                    <button [routerLink]="['/careers']" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CAREERS</button>
                 </li>
                 <!-- careers -->
 
 
                 <li *ngIf="title != '/contact-us'" class="nav-item ">
-                    <button (click)="onNavigate('/contact-us', true)" class="btn btn-dark nav-link float-right nav-button">CONTACT US</button>
+                    <button (click)="onNavigate('/contact-us', true)" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CONTACT US</button>
                 </li>
                 <li *ngIf="title == '/contact-us'" class="nav-item active">
-                    <button class="btn btn-dark nav-link float-right nav-button">CONTACT US</button>
+                    <button class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CONTACT US</button>
                 </li>
 
                 <!-- contact -->
@@ -67,7 +67,7 @@
 </nav>
 
 <!-- <router-outlet ></router-outlet> -->
-<div style="margin-top:50px !important;">
+<div>
     <router-outlet></router-outlet>
 </div>
 
