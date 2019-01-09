@@ -9,6 +9,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent implements OnInit {
     title = '/home';
+    isHamburgerClicked : Boolean = false;
 
     constructor(private _router: Router) { }
 
@@ -19,14 +20,30 @@ export class AppComponent implements OnInit {
                 var st = $(this).scrollTop();
                 if (st > lastScrollTop) {
                     // downscroll code
-                    $( ".navbar" ).removeClass( "navbar-transparent bg-transparent" );
-                    $( ".navbar" ).addClass( "bg-dark navbar-transparent" );
+                    $( ".navbar" ).removeClass( "bg-transparent" );
+                    $( ".navbar" ).addClass( "bg-dark " );
                 } else if (st == 0) {
-                    $( ".navbar" ).addClass( "navbar-transparent bg-transparent" );
-                    $( ".navbar" ).removeClass( "bg-dark navbar-transparent" );
+                    $( ".navbar" ).addClass( "bg-transparent" );
+                    $( ".navbar" ).removeClass( "bg-dark " );
                 }
                 lastScrollTop = st;
             });
+
+            $("#hamburger").click(function(){
+                if ( window.innerWidth <= 900) {
+                    if (this.isHamburgerClicked){
+                        this.isHamburgerClicked = false
+                        if (lastScrollTop == 0){
+                            $( ".navbar" ).addClass( "bg-transparent" );
+                            $( ".navbar" ).removeClass( "bg-dark " );
+                        }
+                    }else{
+                        this.isHamburgerClicked = true
+                        $( ".navbar" ).addClass( "bg-dark");
+                        $( ".navbar" ).removeClass( "bg-transparent" );
+                    }
+                }
+            })
         });
     }
 
