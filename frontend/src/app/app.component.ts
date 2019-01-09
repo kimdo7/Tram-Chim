@@ -21,10 +21,10 @@ export class AppComponent implements OnInit {
                 if (st > lastScrollTop) {
                     // downscroll code
                     $( ".navbar" ).removeClass( "bg-transparent" );
-                    $( ".navbar" ).addClass( "bg-dark " );
+                    $( ".navbar" ).addClass( "grad1" );
                 } else if (st == 0) {
                     $( ".navbar" ).addClass( "bg-transparent" );
-                    $( ".navbar" ).removeClass( "bg-dark " );
+                    $( ".navbar" ).removeClass( "grad1" );
                 }
                 lastScrollTop = st;
             });
@@ -35,11 +35,11 @@ export class AppComponent implements OnInit {
                         this.isHamburgerClicked = false
                         if (lastScrollTop == 0){
                             $( ".navbar" ).addClass( "bg-transparent" );
-                            $( ".navbar" ).removeClass( "bg-dark " );
+                            $( ".navbar" ).removeClass( "grad1" );
                         }
                     }else{
                         this.isHamburgerClicked = true
-                        $( ".navbar" ).addClass( "bg-dark");
+                        $( ".navbar" ).addClass( "grad1");
                         $( ".navbar" ).removeClass( "bg-transparent" );
                     }
                 }

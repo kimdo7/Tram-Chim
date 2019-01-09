@@ -49,3 +49,8 @@
     padding-top: 10px;
     padding-bottom: 10px;}
 }
+
+.grad1 {
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, black , blue) !important; /* Standard syntax (must be last) */
+  }
