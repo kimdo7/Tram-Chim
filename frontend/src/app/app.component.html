@@ -1,88 +1,231 @@
-<nav class="navbar navbar-expand-lg navbar-dark text-white bg-transparent fixed-top navBarHeight" id="temp">
-    <!-- <button class="navbar-brand btn btn-dark" (click)="onNavigate('/', false)">Cloud Bros</button> -->
-
-    <button class="navbar-brand btn" (click)="onNavigate('/', false)">
-        <img src="assets/img/logo/cloudBros.png" width="120" height="50" class="d-inline-block align-top" alt="">
-        
-      </button>
-
-    <button class="navbar-toggler text-dark" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
-        
-    </button>
-
-    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-        <div class=" mr-auto">
+<div class="wrapper">
+    <div class="nav-container js-navigation">
+        <div class="nav-header-container js-header">
+            <div class="nav-header"> <a class="nav-header-name nav-header-icon" href="index.html"> <svg width="42"
+                        height="40">
+                        <use xlink:href="#icon-spoon-fork"></use>
+                    </svg>&nbsp;Tram Chim Westminster </a>
+                <div class="nav-header-menu js-toggle-menu"> <svg class="nav-open-menu js-toggle-active">
+                        <use xlink:href="#icon-burger"></use>
+                    </svg> <svg class="nav-hide-menu js-toggle-active">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                    <nav class="nav-expanded-menu">
+                        <ul>
+                            <li> <a class="js-nav-link" href="#about-us">About Us</a> </li>
+                            <li> <a class="js-nav-link" href="#opening-hours">Opening hours</a> </li>
+                            <li> <a class="js-nav-link" href="#contact-us">Contact us</a> </li>
+                            <li class="nav-cta">
+                                <div class="cta-button reservation" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419"
+                                    data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7" data-glf-host="//www.tramchimkingcrab.com/"
+                                    data-glf-force-mode="" data-glf-mobile-replace="true" data-glf-reservation="true">Table
+                                    Reservation</div>
+                                <div class="cta-button" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419"
+                                    data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7" data-glf-host="//www.tramchimkingcrab.com/"
+                                    data-glf-force-mode="" data-glf-mobile-replace="true">See MENU & Order</div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="text-right">
-            <ul class="navbar-nav">
-                <li *ngIf="title != '/services'" class="nav-item ">
-                    <button (click)="onNavigate('/services', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">SERVICES</button>
-                </li>
-                <li *ngIf="title == '/services'" class="nav-item active ">
-                    <button class="btn  btn-outline-primary  border-0 nav-link float-right nav-button text-white">SERVICES</button>
-                </li>
-                <!-- SERVICES -->
+    </div>
+    <div class="staging-container">
+        <div class="staging">
+            <div class="staging-headlines">
+                <h1>Tram Chim Westminster</h1>
+                <h2>Delicious Seafood in Westminster</h2>
+            </div>
+            <h3 class="w-100"> <svg>
+                    <use xlink:href="#icon-point-down"></use>
+                </svg> We offer Pick-up and Food Delivery <svg>
+                    <use xlink:href="#icon-point-down"></use>
+                </svg> </h3>
+            <div class="staging-background" lazy-style="background-image: url('https://dmkz2i5qfmsty.cloudfront.net/d51b30c1-173f-4b18-9628-45582bbb0ddf.jpg')"></div>
+        </div>
+    </div>
+    <section class="real-time">
+        <div class="wood-background" lazy-style="background-image: url('https://d2skenm2jauoc1.cloudfront.net/websites/img/wood2.png')"></div>
+        <div class="wood-border-1"></div>
+        <div class="real-time-sign js-is-open">
+            <div class="sign">
+                <div><svg>
+                        <use xlink:href="#icon-hang"></use>
+                    </svg></div> <span>Open</span>
+            </div>
+        </div>
+        <div class="real-time-arrow left"> <svg>
+                <use xlink:href="#icon-arrow-to-left"></use>
+            </svg> </div>
+        <div class="real-time-button">
+            <p>Your order confirmed in REAL-TIME</p>
+            <div class="real-time-buttons">
+                <div class="cta-button reservation" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                    data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true"
+                    data-glf-reservation="true">Table
+                    Reservation</div>
+                <div class="cta-button" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                    data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true">See
+                    MENU & Order</div>
+            </div>
+        </div>
+        <div class="real-time-arrow"> <svg>
+                <use xlink:href="#icon-arrow-to-left"></use>
+            </svg> </div>
+    </section>
 
-
-                <li *ngIf="title != '/about-us'" class="nav-item ">
-                    <button (click)="onNavigate('/about-us', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button  text-white">ABOUT US</button>
-                </li>
-                <li *ngIf="title == '/about-us'" class="nav-item active">
-                    <button class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">ABOUT US</button>
-                </li>
-                <!-- company -->
-
-
-
-                <li *ngIf="title != '/partners'" class="nav-item ">
-                    <button (click)="onNavigate('/partners', true)" class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">PARTNERS</button>
-                </li>
-                <li *ngIf="title == '/partners'" class="nav-item active">
-                    <button class="btn btn-outline-primary border-0 nav-link float-right nav-button text-white">PARTNERS</button>
-                </li>
-                <!-- clients -->
-
-                <li *ngIf="title != '/careers'" class="nav-item ">
-                    <button (click)="onNavigate('/careers', true)" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CAREERS</button>
-                </li>
-                <li *ngIf="title == '/careers'" class="nav-item active">
-                    <button [routerLink]="['/careers']" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CAREERS</button>
-                </li>
-                <!-- careers -->
-
-
-                <li *ngIf="title != '/contact-us'" class="nav-item ">
-                    <button (click)="onNavigate('/contact-us', true)" class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CONTACT US</button>
-                </li>
-                <li *ngIf="title == '/contact-us'" class="nav-item active">
-                    <button class="btn btn-outline-primary border-0 text-white nav-link float-right nav-button">CONTACT US</button>
-                </li>
-
-                <!-- contact -->
+    <section class="center-text">
+        <h2 id="about-us">About Us</h2>
+        <hr>
+        <p></p>
+        <p>At Demo Restaurant we offer meals of excellent quality and invite you to try our delicious food.</p>
+        <p>The key to our success is simple: providing quality consistent food that taste great every single time.
+            We pride ourselves on serving our customers delicious genuine dishes like: Asian</p>
+        <p>Eat delicious food. Grab a drink. But most of all, relax! We thank you from the bottom of our hearts for
+            your continued support.</p>
+        <p></p>
+    </section>
+    <section class="opening-hours-container"> <svg>
+            <use xlink:href="#icon-hang"></use>
+        </svg>
+        <div class="opening-hours">
+            <div class="wood-background" lazy-style="background-image: url('https://d2skenm2jauoc1.cloudfront.net/websites/img/wood2.png')"></div>
+            <div class="wood-border-1"></div>
+            <div class="wood-border-2"></div>
+            <div class="content">
+                <h2 id="opening-hours">Opening hours</h2>
+                <div class="entry">
+                    <div>Monday&nbsp;-&nbsp;Sunday</div>
+                    <div>10:00 AM&nbsp;-&nbsp;2:00 AM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="announcement">
+        <div class="picture-background" lazy-style="background-image:url(https://d2skenm2jauoc1.cloudfront.net/websites/img/a_default2.jpg)"></div>
+        <div class="announcement-inner"> <svg>
+                <use xlink:href="#icon-a_default"></use>
+            </svg>
+            <h2 id="new!-online-ordering">NEW! Online ordering</h2>
+            <p></p>
+            <p>This is announcement</p>
+            <p></p>
+        </div>
+    </section>
+    <section class="contact js-contact-form">
+        <h2 id="contact-us">Contact Tram Chim Westminster</h2>
+        <div class="contact-form">
+            <div class="info">
+                <div class="entry"> <svg>
+                        <use xlink:href="#icon-window"></use>
+                    </svg> <span>Tram Chim Westminster</span> </div>
+                <div class="entry"> <svg>
+                        <use xlink:href="#icon-location"></use>
+                    </svg> <span>9455 Bolsa Ave, Westminster, CA 92683, United States</span> </div>
+                <div class="entry"> <svg>
+                        <use xlink:href="#icon-phone"></use>
+                    </svg> <span>
+                        <div><a href="tel:+17144189551">+1 714-418-9551</a></div>
+                    </span> </div>
+            </div>
+            <div class="input-form"> <input class="js-contact-name" type="text" placeholder="Name"> <input class="js-contact-email"
+                    type="text" placeholder="Email"> <textarea class="js-contact-message" rows="5" placeholder="Your message"></textarea>
+                <div class="captcha">
+                    <div class="g-recaptcha" data-sitekey="6Lct3SATAAAAAH9dx6Rum5LqPlEhop1_sBpCgZvM" data-size="normal"></div>
+                </div>
+                <div class="input-form-feedback js-contact-feedback"> <svg class="icon-attention">
+                        <use xlink:href="#icon-attention"></use>
+                    </svg> <svg class="icon-check">
+                        <use xlink:href="#icon-check"></use>
+                    </svg> <span class="js-contact-feedback-message"></span> </div>
+                <div class="cta-button neutral js-contact-send">Submit</div>
+            </div>
+        </div>
+    </section>
+    <section class="map-delivery js-has-map">
+        <div class="map-container">
+            <div id="map" class="map"></div>
+            <div class="mapBoxButtonsContainer">
+                <div class="mapBoxButtons"> <span id="glfGoogleView">Google Maps</span> </div>
+                <div class="mapBoxButtons"> <span class="start selected" id="glfMapView"> Map </span> <span class="end"
+                        id="glfSatelliteView"> Satellite </span> </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-inner">
+                <h2>Food delivery in Westminster</h2>
+                <hr>
+                <p></p>
+                <p>Looking for food delivery in San Jose? Not everybody knows or has the time to prepare tasty
+                    food.</p>
+                <p>When you want to get served like a king then food delivery from Demo Restaurant will be your
+                    best choice.</p>
+                <p>Simply select "Delivery" at the checkout screen and we hope you'll appreciate our food delivery
+                    service.</p>
+                <p></p>
+                <h3>Delivery fee</h3>
+                <div class="entry"> <span class="zone-color" style="background-color: #f2ac1f;"></span> <strong>Zone
+                        1</strong>, Min - $0.00, Fee - $0.00 </div>
+            </div>
+        </div>
+    </section>
+    <section class="center-text whitelabel-app">
+        <h2 id="branded-mobile-app">Tram Chim Westminster mobile app</h2>
+        <hr>
+        <p></p>
+        <p>You can now order online from Tram Chim Westminster in Westminster using your own smartphone. We'll be
+            delighted to confirm your order in real-time. Simply download the app and start ordering online from
+            Tram Chim Westminster.</p>
+        <p>Depending on your device, you should choose to install the Tram Chim Westminster Android mobile app or
+            the Tram Chim Westminster iOS mobile app.</p>
+        <p></p> <a href="https://play.google.com/store/apps/details?id=com.foodbooking.tramchim&amp;hl=en&amp;gl=us"
+            target="_blank" class="store-icons"> <img class="google-play" lazy-src="https://d2skenm2jauoc1.cloudfront.net/websites/img/google-play.png"
+                alt="Tram Chim Westminster in Westminster Android mobile app"> </a>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <div class="cta-button reservation" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true"
+                data-glf-reservation="true">Table Reservation</div>
+            <div class="cta-button" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true">See
+                MENU & Order</div>
+            <div class="footer-language-selector"> <svg>
+                    <use xlink:href="#icon-globe"></use>
+                </svg> <select class="js-language-selector">
+                    <option value="/" selected>English</option>
+                </select> </div>
+            <ul class="footer-legal-links">
+                <li><a href="privacy.html">Privacy policy</a></li>
+                <li><a href="terms.html">Terms of service</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="special-offers.html">Special Offers</a></li>
+                <li><a href="table-reservations.html">Table reservation</a></li>
             </ul>
         </div>
-    </div>
-</nav>
-
-<!-- <router-outlet ></router-outlet> -->
-<div>
-    <router-outlet></router-outlet>
-</div>
-
-<div *ngIf="title != '/contact-us'" class="bg-primary w-100 jumbotron mb-0 rounded-0">
-    <div class="container">
-        <div class="row text-white">
-            <h2 class="col-md-9">See why everyone says "Cloud Bros"</h2>
-            <!-- <button class="col-3">REQUEST A QUOTE</button> -->
-            <button mat-stroked-button (click)="onNavigate('/contact-us', false)" class="col-md-3 text-primary bg-white">REQUEST
-                A
-                QUOTE</button>
+        <ul class="footer-extra-links">
+            <li><a href="seafood-delivery-san-jose-edenvale.html">Seafood Delivery San Jose Edenvale</a></li>
+            <li><a href="seafood-delivery-san-jose-rancho-santa-teresa.html">Seafood Delivery San Jose Rancho Santa
+                    Teresa</a></li>
+            <li><a href="seafood-delivery-san-jose-evergreen-valley.html">Seafood Delivery San Jose Evergreen
+                    Valley</a></li>
+            <li><a href="seafood-delivery-san-jose.html">Seafood Delivery San Jose</a></li>
+            <li><a href="takeout-food-delivery.html">Takeout food delivery </a></li>
+        </ul>
+        <div class="footer-partner">
+            <div></div>
+            <div>
+                <div><strong>Supported by:</strong></div>
+                <div>KD | https://www.kimdo7.com | contact@kimdo7.com</div>
+            </div>
         </div>
-
-    </div>
-</div>
-<div class="jumbotron bg-dark mb-0 rounded-0">
-    <small class="text-white">@ 2018 Cloud Bros, LLC.</small>
+        <div class="footer-buttons">
+            <div class="cta-button reservation" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true"
+                data-glf-reservation="true">Table Reservation</div>
+            <div class="cta-button" data-glf-cuid="e61f3ea1-68d6-4521-9a41-9f5057bf7419" data-glf-ruid="b11ded20-af7c-4bf0-90ac-03eab1511ee7"
+                data-glf-host="//www.tramchimkingcrab.com/" data-glf-force-mode="" data-glf-mobile-replace="true">See
+                MENU & Order</div>
+        </div>
+    </footer>
 </div>
